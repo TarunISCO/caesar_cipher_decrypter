@@ -3,7 +3,7 @@ Caesar Cipher Decrypter
 
 ## Caesar Cipher
 
-In Cryptography, a *Caesar Cipher* also known as the *Shift Cipher*, *Caesar Shift*, is one of the simplest and most widely known encryption techniques. It is a type of [substitution cipher](https://en.wikipedia.org/wiki/Substitution_cipher) in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.  For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+In Cryptography, a *Caesar Cipher*, also known as the *Shift Cipher*, *Caesar Shift*, is one of the simplest and most widely known encryption techniques. It is a type of [substitution cipher](https://en.wikipedia.org/wiki/Substitution_cipher) in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.  For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
 
 ![Caesar Cipher Example](https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg "Caesar Cipher Example")
 
@@ -30,16 +30,16 @@ The replacement remains the same throughout the message, so the cipher is classe
 
 
 ## Writing the Script
-How Caesar Cipher works is that it shifts the alphabets in the same order one step wither clockwise or counter clockwise. Keeping this in mind I started writing a script.
-Here’s what this script does.
+How Caesar Cipher works is that it shifts the characters(or letters) in the same order one step wither clockwise or counter clockwise. Keeping this in mind, I started writing a script.
+Here’s what this script does:
 * Takes the user input of Cryptic(ciphertext) message.
-* Generate all of 26 possible keys.
-* Using each key, generate a possible decrypt.
-* Check with the common and valid english words.
-* Calculate the probability.
-* If it has the probability higher than 20, print decrypts.
+* Generates all of the 26 possible keys.
+* Using each key, generates a possible decrypt.
+* Checks with the common and valid English words.
+* Calculates the probability.
+* If it has a probability of greater than 20, prints the decrypt(s).
 
 #### Library Used
-To verify if the decrypted words belongs to proper english dictionary : __Enchant__
+To verify if the decrypted words belong to the proper English dictionary : __Enchant__
 
 Download __Enchant__ from terminal using *pip* as `pip install pyenchant`
